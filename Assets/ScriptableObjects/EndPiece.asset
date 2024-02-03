@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cb90078af90fd04f8218836ad995ba0, type: 3}
+  m_Name: EndPiece
+  m_EditorClassIdentifier: 
+  axisToRotate: 0
+  rotDegrees: 0
+  rotTime: 0
+  verticalMoveTime: 0
+  rotWaitTime: 0
+  moveDownWaitTime: 0
+  distUp: 0
+  moveUpSFX: {fileID: 0}
+  rotateSFX: {fileID: 0}
+  moveDownSFX: {fileID: 0}
