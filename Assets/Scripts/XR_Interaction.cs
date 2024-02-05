@@ -7,7 +7,7 @@ public class XR_Interaction : MonoBehaviour
 {
 
     // Start is called before the first frame update
-    public float raycastDistance = 10f;
+    public float raycastDistance = 100f;
     public LayerMask raycastMask;
     public Material highlightMaterial;
     private ActionBasedController controller;
@@ -41,6 +41,7 @@ public class XR_Interaction : MonoBehaviour
 
     private void HandleRaycastHit(RaycastHit hit)
     {
+        Debug.Log("hitttt");
         // if the object we hit of a tag geometry
         // then select the parent object of this object
         if (hit.collider.gameObject.CompareTag("Geometry"))
