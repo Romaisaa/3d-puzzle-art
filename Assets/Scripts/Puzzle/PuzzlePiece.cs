@@ -92,6 +92,21 @@ namespace PuzzlePipes
                 isRotating = true;
             }
         }
+        public void OnSelect(){
+            if (puzzleMaster.completed) return;
+            // if the piece is rotating, we can't click on it and rotate again
+            if(!isRotating)
+            {
+                onClick.Invoke();
+                // move vertically up
+                StartCoroutine(MoveVertically(startPos, upPos, verticalMoveTime));
+                // rotate 90 degrees
+                StartCoroutine(Rotate(rotDegrees, rotWaitTime, rotTime));
+                // move vertically down
+                StartCoroutine(MoveVertically(upPos, startPos, verticalMoveTime, moveDownWaitTime));
+                isRotating = true;
+            }
+        }
 
         // this method is called when the pointer enters this object's collider
         public void OnPointerEnter(PointerEventData eventData)
