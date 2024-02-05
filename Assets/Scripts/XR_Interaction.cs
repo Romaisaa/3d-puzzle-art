@@ -1,7 +1,6 @@
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.InputSystem;
-using PuzzlePipes;
 
 public class XR_Interaction : MonoBehaviour
 {
@@ -26,6 +25,7 @@ public class XR_Interaction : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(transform.position, transform.forward, out hit, raycastDistance))
         {
+            
             HandleRaycastHit(hit);
             isPointingAtMesh = true;
 

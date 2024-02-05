@@ -23,7 +23,7 @@ RenderSettings:
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
-  m_AmbientIntensity: 1
+  m_AmbientIntensity: 2.43
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
@@ -37,8 +37,8 @@ RenderSettings:
   m_ReflectionBounces: 1
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
-  m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028438, g: 0.22571555, b: 0.3069229, a: 1}
+  m_Sun: {fileID: 1530894223}
+  m_IndirectSpecularColor: {r: 0.1836571, g: 0.2279612, b: 0.29834494, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1383,12 +1383,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e561e741f08971a4cbd9081b71b1c9f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  puzzlePiece: {fileID: 11400000, guid: 1af52076dbeb660458ec704b0a70babc, type: 2}
   connectors: []
   receiver: {fileID: 0}
-  onClick:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1001 &155480541
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2326,12 +2322,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e561e741f08971a4cbd9081b71b1c9f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  puzzlePiece: {fileID: 11400000, guid: bce6eb7608ee36345af23d840b0c39c1, type: 2}
   connectors: []
   receiver: {fileID: 0}
-  onClick:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1 &239618937
 GameObject:
   m_ObjectHideFlags: 0
@@ -2472,6 +2464,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6896928277785717660, guid: 1fee6dd998d7f2044b7f0a7e3f186e3d,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3617,12 +3614,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e561e741f08971a4cbd9081b71b1c9f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  puzzlePiece: {fileID: 11400000, guid: 1af52076dbeb660458ec704b0a70babc, type: 2}
   connectors: []
   receiver: {fileID: 0}
-  onClick:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1001 &496140586
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3867,12 +3860,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e561e741f08971a4cbd9081b71b1c9f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  puzzlePiece: {fileID: 11400000, guid: 1af52076dbeb660458ec704b0a70babc, type: 2}
   connectors: []
   receiver: {fileID: 0}
-  onClick:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1001 &533901904
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4117,76 +4106,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 561146456}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &582889725
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 582889727}
-  - component: {fileID: 582889726}
-  - component: {fileID: 582889728}
-  m_Layer: 8
-  m_Name: Post Processing Volume
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &582889726
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 582889725}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5bb216a1f946be84fbcabe4a747da0ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  propIsActive: 0
-  lightActivateSpeed: 2
-  cursorTexture: {fileID: 0}
-  cursorTarget: {x: 0, y: 0}
---- !u!4 &582889727
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 582889725}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &582889728
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 582889725}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &594904806
 GameObject:
   m_ObjectHideFlags: 0
@@ -4391,12 +4310,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e561e741f08971a4cbd9081b71b1c9f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  puzzlePiece: {fileID: 11400000, guid: 1af52076dbeb660458ec704b0a70babc, type: 2}
   connectors: []
   receiver: {fileID: 0}
-  onClick:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1 &606136824
 GameObject:
   m_ObjectHideFlags: 0
@@ -5167,12 +5082,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e561e741f08971a4cbd9081b71b1c9f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  puzzlePiece: {fileID: 11400000, guid: 1af52076dbeb660458ec704b0a70babc, type: 2}
   connectors: []
   receiver: {fileID: 0}
-  onClick:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1 &693044961
 GameObject:
   m_ObjectHideFlags: 0
@@ -6811,8 +6722,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
-  m_fontSizeBase: 18
+  m_fontSize: 9
+  m_fontSizeBase: 9
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -6906,7 +6817,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 829399479}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 7.37}
+  m_LocalPosition: {x: 0, y: 0, z: -1.36}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6914,7 +6825,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.62, y: 0.86}
+  m_AnchoredPosition: {x: 2.37, y: 0.86}
   m_SizeDelta: {x: 12.0838, y: 2.2026}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &862217088
@@ -8112,12 +8023,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e561e741f08971a4cbd9081b71b1c9f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  puzzlePiece: {fileID: 11400000, guid: 1af52076dbeb660458ec704b0a70babc, type: 2}
   connectors: []
   receiver: {fileID: 0}
-  onClick:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1 &1121803346
 GameObject:
   m_ObjectHideFlags: 0
@@ -8611,12 +8518,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e561e741f08971a4cbd9081b71b1c9f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  puzzlePiece: {fileID: 11400000, guid: 1af52076dbeb660458ec704b0a70babc, type: 2}
   connectors: []
   receiver: {fileID: 0}
-  onClick:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1 &1180180395
 GameObject:
   m_ObjectHideFlags: 0
@@ -9191,7 +9094,7 @@ Transform:
   m_GameObject: {fileID: 1230678196}
   serializedVersion: 2
   m_LocalRotation: {x: 0.25097984, y: 0, z: 0, w: 0.96799237}
-  m_LocalPosition: {x: 0, y: 1.67, z: -6.75}
+  m_LocalPosition: {x: 0, y: 0.93, z: -5.73}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -10330,12 +10233,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e561e741f08971a4cbd9081b71b1c9f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  puzzlePiece: {fileID: 11400000, guid: 1af52076dbeb660458ec704b0a70babc, type: 2}
   connectors: []
   receiver: {fileID: 0}
-  onClick:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1001 &1431203087
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10679,12 +10578,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e561e741f08971a4cbd9081b71b1c9f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  puzzlePiece: {fileID: 11400000, guid: 1af52076dbeb660458ec704b0a70babc, type: 2}
   connectors: []
   receiver: {fileID: 0}
-  onClick:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1001 &1508526113
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10787,8 +10682,8 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 1
+  m_Color: {r: 1, g: 0.9202715, b: 0.7028302, a: 1}
+  m_Intensity: 4
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -10797,10 +10692,10 @@ Light:
     m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
-    m_Strength: 1
+    m_Strength: 0.458
     m_Bias: 0.05
     m_NormalBias: 0.4
-    m_NearPlane: 0.2
+    m_NearPlane: 0.1
     m_CullingMatrixOverride:
       e00: 1
       e01: 0
@@ -10822,7 +10717,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -10830,7 +10725,7 @@ Light:
   m_Lightmapping: 4
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
+  m_BounceIntensity: 2
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
@@ -10846,13 +10741,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1530894222}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.12887129, y: -0.8631431, z: 0.40249002, w: -0.27636582}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalRotation: {x: -0.055832133, y: -0.9723066, z: 0.21498953, w: -0.072678834}
+  m_LocalPosition: {x: 0.15, y: 8.69, z: -3.29}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 50, y: -215.509, z: 0}
+  m_LocalEulerAnglesHint: {x: 25.226, y: -187.452, z: 4.903}
 --- !u!114 &1530894225
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11779,12 +11674,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e561e741f08971a4cbd9081b71b1c9f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  puzzlePiece: {fileID: 11400000, guid: 1af52076dbeb660458ec704b0a70babc, type: 2}
   connectors: []
   receiver: {fileID: 0}
-  onClick:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!4 &1595043940 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3685022225888972153, guid: a427b3dea6358574a981cbcc89c21e4a,
@@ -12034,12 +11925,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e561e741f08971a4cbd9081b71b1c9f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  puzzlePiece: {fileID: 11400000, guid: 1af52076dbeb660458ec704b0a70babc, type: 2}
   connectors: []
   receiver: {fileID: 0}
-  onClick:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1001 &1681121081
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12107,6 +11994,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6896928277785717660, guid: 1fee6dd998d7f2044b7f0a7e3f186e3d,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13025,12 +12917,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e561e741f08971a4cbd9081b71b1c9f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  puzzlePiece: {fileID: 11400000, guid: 1af52076dbeb660458ec704b0a70babc, type: 2}
   connectors: []
   receiver: {fileID: 0}
-  onClick:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1 &1788916095
 GameObject:
   m_ObjectHideFlags: 0
@@ -13302,12 +13190,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e561e741f08971a4cbd9081b71b1c9f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  puzzlePiece: {fileID: 11400000, guid: 1af52076dbeb660458ec704b0a70babc, type: 2}
   connectors: []
   receiver: {fileID: 0}
-  onClick:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!4 &1853014456 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5046497358720775445, guid: cea4ce3effd7ece4baf47e6522ac8d45,
@@ -13610,6 +13494,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6896928277785717660, guid: 1fee6dd998d7f2044b7f0a7e3f186e3d,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14142,6 +14031,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1975101810}
   - component: {fileID: 1975101815}
+  - component: {fileID: 1975101816}
   - component: {fileID: 1975101814}
   - component: {fileID: 1975101813}
   - component: {fileID: 1975101812}
@@ -14805,6 +14695,23 @@ MonoBehaviour:
     m_Reference: {fileID: -1636515391019944688, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
   m_ButtonPressPoint: 0.5
+--- !u!114 &1975101816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1975101809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f822caf676b1019448a53cc5cf343025, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  raycastDistance: 100
+  raycastMask:
+    serializedVersion: 2
+    m_Bits: 0
+  highlightMaterial: {fileID: 0}
 --- !u!1 &1982581754
 GameObject:
   m_ObjectHideFlags: 0
@@ -14969,12 +14876,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e561e741f08971a4cbd9081b71b1c9f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  puzzlePiece: {fileID: 11400000, guid: 1af52076dbeb660458ec704b0a70babc, type: 2}
   connectors: []
   receiver: {fileID: 0}
-  onClick:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1001 &2027611496
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15042,6 +14945,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6896928277785717660, guid: 1fee6dd998d7f2044b7f0a7e3f186e3d,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16061,6 +15969,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2121667291}
   - component: {fileID: 2121667296}
+  - component: {fileID: 2121667297}
   - component: {fileID: 2121667295}
   - component: {fileID: 2121667294}
   - component: {fileID: 2121667293}
@@ -16724,6 +16633,23 @@ MonoBehaviour:
     m_Reference: {fileID: -6447266317303757838, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
   m_ButtonPressPoint: 0.5
+--- !u!114 &2121667297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2121667290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f822caf676b1019448a53cc5cf343025, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  raycastDistance: 100
+  raycastMask:
+    serializedVersion: 2
+    m_Bits: 0
+  highlightMaterial: {fileID: 0}
 --- !u!1 &2133658232
 GameObject:
   m_ObjectHideFlags: 0
@@ -17037,12 +16963,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e561e741f08971a4cbd9081b71b1c9f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  puzzlePiece: {fileID: 11400000, guid: 3d135f1e1956d9e4286d2abe78f68fc7, type: 2}
   connectors: []
   receiver: {fileID: 0}
-  onClick:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -17055,5 +16977,4 @@ SceneRoots:
   - {fileID: 1230678199}
   - {fileID: 991206731}
   - {fileID: 594904807}
-  - {fileID: 582889727}
   - {fileID: 1180180396}

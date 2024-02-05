@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
-namespace PuzzlePipes
-{
+
     [CustomEditor(typeof(PuzzleGenerator))]
     public class PuzzleGeneratorEditor : Editor
     {
@@ -25,5 +24,5 @@ namespace PuzzlePipes
         }
     }
 
-}
+
 

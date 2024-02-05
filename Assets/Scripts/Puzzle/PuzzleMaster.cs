@@ -2,11 +2,6 @@ using UnityEngine;
 using UnityEngine.Events;
 using System.Collections.Generic;
 
-namespace PuzzlePipes
-{
-    /// <summary>
-    /// RotatingPiecesPuzzle.cs checks for the puzzle complete
-    /// </summary>
     public class PuzzleMaster : MonoBehaviour
     {
         public bool completed;
@@ -36,7 +31,6 @@ namespace PuzzlePipes
         private void CheckForPuzzleComplete()
         {
             completed = true;
-            // if all end connectors are receivers it means the puzzle is solved
             foreach (var endConnector in endConnectors)
             {
                 if (!endConnector.IsReceiver)
@@ -56,7 +50,6 @@ namespace PuzzlePipes
         }
 
 
-        /// Gets PuzzleConnect component from each list member and returns them as a list
         private List<PuzzleConnect> GetPuzzleConnectFromGOList(List<GameObject> list)
         {
             int length = list.Count;
@@ -71,4 +64,3 @@ namespace PuzzlePipes
             return newList;
         }
     }
-}
