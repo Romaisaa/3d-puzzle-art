@@ -9,8 +9,6 @@ using System.Collections.Generic;
         public Color DefaultPipeColour = Color.grey;
         public Color DefaultPieceColour = Color.grey;
         public Color ConnectedPipeColour = Color.blue;
-        public Color SelectedPieceColour = Color.yellow;
-
         public List<PuzzleConnect> endConnectors;
         public UnityEvent onPuzzleComplete;
         private List<GameObject> endConnectorsGO;
